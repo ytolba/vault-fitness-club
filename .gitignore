@@ -1,0 +1,6 @@
+.DS_Store
+.impeccable/review/
+.impeccable/references/
+.impeccable/surface-brief-body.md
+assets/*-reference.png
+assets/*.png

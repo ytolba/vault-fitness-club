@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-12T15:33:19Z",
+  "title": "Design System: Vault Fitness Club",
+  "extensions": {
+    "colorMeta": {
+      "threshold-black": {
+        "role": "neutral",
+        "displayName": "Threshold Black",
+        "canonical": "#090a0a",
+        "tonalRamp": ["oklch(15% 0.002 180)", "oklch(26% 0.002 180)", "oklch(38% 0.002 180)", "oklch(50% 0.002 180)", "oklch(62% 0.002 180)", "oklch(74% 0.002 180)", "oklch(86% 0.002 180)", "oklch(95% 0.002 180)"]
+      },
+      "soft-black": {
+        "role": "neutral",
+        "displayName": "Soft Black",
+        "canonical": "#111212",
+        "tonalRamp": ["oklch(15% 0.003 180)", "oklch(26% 0.003 180)", "oklch(38% 0.003 180)", "oklch(50% 0.003 180)", "oklch(62% 0.003 180)", "oklch(74% 0.003 180)", "oklch(86% 0.003 180)", "oklch(95% 0.003 180)"]
+      },
+      "warm-ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "canonical": "#171612",
+        "tonalRamp": ["oklch(15% 0.012 80)", "oklch(26% 0.012 80)", "oklch(38% 0.012 80)", "oklch(50% 0.012 80)", "oklch(62% 0.012 80)", "oklch(74% 0.012 80)", "oklch(86% 0.012 80)", "oklch(95% 0.012 80)"]
+      },
+      "warm-white": {
+        "role": "neutral",
+        "displayName": "Warm White",
+        "canonical": "#f2ede2",
+        "tonalRamp": ["oklch(15% 0.02 80)", "oklch(26% 0.02 80)", "oklch(38% 0.02 80)", "oklch(50% 0.02 80)", "oklch(62% 0.02 80)", "oklch(74% 0.02 80)", "oklch(86% 0.02 80)", "oklch(95% 0.02 80)"]
+      },
+      "dim-cream": {
+        "role": "neutral",
+        "displayName": "Dim Cream",
+        "canonical": "#c6bfb2",
+        "tonalRamp": ["oklch(15% 0.018 75)", "oklch(26% 0.018 75)", "oklch(38% 0.018 75)", "oklch(50% 0.018 75)", "oklch(62% 0.018 75)", "oklch(74% 0.018 75)", "oklch(86% 0.018 75)", "oklch(95% 0.018 75)"]
+      },
+      "metallic-gold": {
+        "role": "primary",
+        "displayName": "Metallic Gold",
+        "canonical": "#d6a52e",
+        "tonalRamp": ["oklch(15% 0.12 82)", "oklch(26% 0.12 82)", "oklch(38% 0.12 82)", "oklch(50% 0.12 82)", "oklch(62% 0.12 82)", "oklch(74% 0.12 82)", "oklch(86% 0.12 82)", "oklch(95% 0.12 82)"]
+      },
+      "halo-gold": {
+        "role": "primary",
+        "displayName": "Halo Gold",
+        "canonical": "#f0c65a",
+        "tonalRamp": ["oklch(15% 0.11 88)", "oklch(26% 0.11 88)", "oklch(38% 0.11 88)", "oklch(50% 0.11 88)", "oklch(62% 0.11 88)", "oklch(74% 0.11 88)", "oklch(86% 0.11 88)", "oklch(95% 0.11 88)"]
+      },
+      "deep-gold": {
+        "role": "primary",
+        "displayName": "Deep Gold",
+        "canonical": "#74510f",
+        "tonalRamp": ["oklch(15% 0.09 78)", "oklch(26% 0.09 78)", "oklch(38% 0.09 78)", "oklch(50% 0.09 78)", "oklch(62% 0.09 78)", "oklch(74% 0.09 78)", "oklch(86% 0.09 78)", "oklch(95% 0.09 78)"]
+      },
+      "dark-rule": {
+        "role": "neutral",
+        "displayName": "Dark Rule",
+        "canonical": "rgba(242, 237, 226, 0.18)",
+        "tonalRamp": ["oklch(15% 0.02 80 / 0.18)", "oklch(26% 0.02 80 / 0.18)", "oklch(38% 0.02 80 / 0.18)", "oklch(50% 0.02 80 / 0.18)", "oklch(62% 0.02 80 / 0.18)", "oklch(74% 0.02 80 / 0.18)", "oklch(86% 0.02 80 / 0.18)", "oklch(95% 0.02 80 / 0.18)"]
+      },
+      "light-rule": {
+        "role": "neutral",
+        "displayName": "Light Rule",
+        "canonical": "rgba(23, 22, 18, 0.18)",
+        "tonalRamp": ["oklch(15% 0.012 80 / 0.18)", "oklch(26% 0.012 80 / 0.18)", "oklch(38% 0.012 80 / 0.18)", "oklch(50% 0.012 80 / 0.18)", "oklch(62% 0.012 80 / 0.18)", "oklch(74% 0.012 80 / 0.18)", "oklch(86% 0.012 80 / 0.18)", "oklch(95% 0.012 80 / 0.18)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Tightly stacked hero declarations only." },
+      "headline": { "displayName": "Headline", "purpose": "Large uppercase section statements." },
+      "title": { "displayName": "Title", "purpose": "Amenity tiles and structured subheads." },
+      "body": { "displayName": "Body", "purpose": "Direct explanatory copy and location details." },
+      "label": { "displayName": "Label", "purpose": "Navigation, actions, metadata, and category markers." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "state-fast", "value": "180ms ease", "purpose": "Hover, menu, and border state changes." },
+      { "name": "threshold-progress", "value": "requestAnimationFrame(scroll progress)", "purpose": "Moves the continuous threshold line with page progress; resolves to a static full line under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "960px" },
+      { "name": "mobile", "value": "700px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Action",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Primary call or directions action on dark and light fields.",
+      "html": "<a class=\"ds-button ds-button-gold\" href=\"#\"><span>Call the club</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 7l5 5-5 5\" /></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;min-height:3.7rem;padding:.85rem 1.25rem;border:1px solid;font:800 .73rem/1.5 \"Helvetica Neue\",Helvetica,Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:color 180ms ease,background 180ms ease,border-color 180ms ease}.ds-button svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:square;stroke-linejoin:miter}.ds-button-gold{color:var(--black,#090a0a);border-color:var(--gold-bright,#f0c65a);background:var(--gold-bright,#f0c65a)}.ds-button-gold:hover{background:var(--cream,#f2ede2);border-color:var(--cream,#f2ede2)}.ds-button-gold:focus-visible{outline:2px solid var(--gold-bright,#f0c65a);outline-offset:4px}.ds-button-gold:active{background:var(--gold,#d6a52e);border-color:var(--gold,#d6a52e)}"
+    },
+    {
+      "name": "Outline Action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action that preserves the containing field.",
+      "html": "<a class=\"ds-button ds-button-outline\" href=\"#\"><span>Get directions</span><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 7l5 5-5 5\" /></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:space-between;gap:2rem;min-height:3.7rem;padding:.85rem 1.25rem;border:1px solid;font:800 .73rem/1.5 \"Helvetica Neue\",Helvetica,Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:color 180ms ease,background 180ms ease,border-color 180ms ease}.ds-button svg{width:1rem;height:1rem;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:square;stroke-linejoin:miter}.ds-button-outline{color:var(--cream,#f2ede2);border-color:var(--line-dark,rgba(242,237,226,.18));background:transparent}.ds-button-outline:hover{color:var(--gold-bright,#f0c65a);border-color:var(--gold,#d6a52e)}.ds-button-outline:focus-visible{outline:2px solid var(--gold-bright,#f0c65a);outline-offset:4px}.ds-button-outline:active{color:var(--cream,#f2ede2);border-color:var(--cream,#f2ede2)}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "description": "Quiet centered navigation for the fixed desktop header.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a href=\"#\">Train</a><a href=\"#\">Recover</a><a href=\"#\">Amenities</a><a href=\"#\">Visit</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:2.4rem;color:var(--cream-dim,#c6bfb2);font:700 .72rem/1.5 \"Helvetica Neue\",Helvetica,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase}.ds-nav a{color:inherit;text-decoration:none;transition:color 180ms ease}.ds-nav a:hover{color:var(--gold-bright,#f0c65a)}.ds-nav a:focus-visible{outline:2px solid var(--gold-bright,#f0c65a);outline-offset:4px}.ds-nav a:active{color:var(--gold,#d6a52e)}"
+    },
+    {
+      "name": "Amenity Tile",
+      "kind": "card",
+      "description": "Square ruled cell for a short, concrete club amenity.",
+      "html": "<div class=\"ds-amenity\"><strong>Open 24 hours</strong></div>",
+      "css": ".ds-amenity{display:flex;align-items:flex-end;min-height:12rem;padding:1.4rem;color:var(--cream,#f2ede2);background:var(--black,#090a0a);border:1px solid var(--line-dark,rgba(242,237,226,.18))}.ds-amenity strong{display:block;max-width:8ch;font:700 2rem/1 \"Barlow Condensed\",sans-serif;letter-spacing:-.03em;text-transform:uppercase}"
+    },
+    {
+      "name": "Recovery Rail Item",
+      "kind": "custom",
+      "description": "Ruled label-and-title row used on the halo-gold recovery field.",
+      "html": "<article class=\"ds-recovery-row\"><span>Heat</span><h3>Infrared sauna</h3></article>",
+      "css": ".ds-recovery-row{display:grid;grid-template-columns:5rem 1fr;gap:1.25rem;align-items:center;padding:1.55rem 0;color:var(--ink,#171612);background:var(--gold-bright,#f0c65a);border-top:1px solid rgba(9,10,10,.35);border-bottom:1px solid rgba(9,10,10,.35)}.ds-recovery-row span{font:800 .7rem/1.5 \"Helvetica Neue\",Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}.ds-recovery-row h3{margin:0;font:700 clamp(1.5rem,2.5vw,2.4rem)/1 \"Barlow Condensed\",sans-serif;letter-spacing:-.035em;text-transform:uppercase}"
+    },
+    {
+      "name": "Threshold Progress",
+      "kind": "custom",
+      "description": "The continuous gold seam that marks passage through the page.",
+      "html": "<div class=\"ds-threshold\" aria-hidden=\"true\"><span></span></div>",
+      "css": ".ds-threshold{width:2px;height:16rem;background:rgba(214,165,46,.16)}.ds-threshold span{display:block;width:100%;height:62%;background:var(--gold-bright,#f0c65a)}@media (prefers-reduced-motion:reduce){.ds-threshold span{height:100%}}"
+    },
+    {
+      "name": "Mobile Quick Actions",
+      "kind": "nav",
+      "description": "Persistent two-action rail for the narrow-screen conversion path.",
+      "html": "<nav class=\"ds-mobile-actions\" aria-label=\"Quick actions\"><a href=\"#\">Call</a><a href=\"#\">Directions</a></nav>",
+      "css": ".ds-mobile-actions{display:grid;grid-template-columns:1fr 1fr;background:var(--black,#090a0a);border-top:1px solid var(--gold-dark,#74510f)}.ds-mobile-actions a{padding:1rem;color:var(--cream,#f2ede2);font:800 .7rem/1.5 \"Helvetica Neue\",Helvetica,Arial,sans-serif;letter-spacing:.13em;text-align:center;text-transform:uppercase;text-decoration:none}.ds-mobile-actions a:first-child{color:var(--black,#090a0a);background:var(--gold-bright,#f0c65a)}.ds-mobile-actions a:hover{color:var(--gold-bright,#f0c65a)}.ds-mobile-actions a:first-child:hover{color:var(--black,#090a0a);background:var(--cream,#f2ede2)}.ds-mobile-actions a:focus-visible{outline:2px solid var(--gold-bright,#f0c65a);outline-offset:-4px}.ds-mobile-actions a:active{background:var(--gold,#d6a52e);color:var(--black,#090a0a)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Halo Threshold",
+    "overview": "Halo Threshold translates the real club's illuminated nighttime sign into a modern architectural visual world. Near-black fields hold the experience in tension while warm white and tightly controlled metallic gold mark the points where a visitor crosses from looking to acting. The mood is restrained and premium, but grounded in the actual Vault exterior, real amenities, and local utility rather than luxury theater.\n\nThe system is bold through scale, contrast, and spatial confidence—not effects. Condensed uppercase display type, long structural rules, squared controls, generous negative space, and alternating black, cream, and gold fields create the rhythm. The gold threshold line is the reusable signature: a precise seam that can divide imagery, mark progress, or signal a change of state.",
+    "keyCharacteristics": [
+      "Architectural rather than ornamental",
+      "Premium but grounded in the real club",
+      "Near-black, warm white, and rare metallic gold",
+      "Condensed display typography against quiet system-sans body copy",
+      "Flat, square, rule-based surfaces with generous negative space",
+      "A continuous gold threshold line as the signature gesture"
+    ],
+    "rules": [
+      { "name": "The Controlled Halo Rule", "body": "Gold marks action, transition, and high-value emphasis; it is never scattered as decorative sparkle.", "section": "colors" },
+      { "name": "The No Turf Rule", "body": "Turf green does not enter the primary identity. The brand world remains near-black, warm metallic gold, warm white, and restrained neutrals.", "section": "colors" },
+      { "name": "The Compressed Declaration Rule", "body": "Use condensed uppercase type for decisive statements; use the body face for explanation and evidence.", "section": "typography" },
+      { "name": "The Narrow Label Rule", "body": "Labels stay small, uppercase, and widely tracked. They organize the architecture rather than compete with it.", "section": "typography" },
+      { "name": "The Real Place First Rule", "body": "On narrow screens, the exterior photograph appears before the headline so the physical club remains the first piece of evidence.", "section": "layout" },
+      { "name": "The Flat Structure Rule", "body": "Never use drop shadows to simulate quality. Establish hierarchy with contrast, cropping, field changes, and precise borders.", "section": "elevation" },
+      { "name": "The One Circle Rule", "body": "The circular silhouette belongs to the VAULT mark. Interactive and content surfaces remain square.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do use gold for actions, transitions, and a small number of decisive words or fields.",
+      "Do let oversized condensed headlines and generous negative space carry the drama.",
+      "Do use the real exterior photograph as architectural evidence and preserve its warm nighttime halo.",
+      "Do build hierarchy with 1px rules, field changes, cropping, and alignment.",
+      "Do keep call and directions visually primary, especially on mobile."
+    ],
+    "donts": [
+      "Don't introduce turf green, neon gradients, chrome effects, or decorative gold glitter.",
+      "Don't round buttons, tiles, navigation surfaces, or content containers.",
+      "Don't add shadows or floating-card stacks to create depth.",
+      "Don't replace the restrained body face with an aggressive gym-display font.",
+      "Don't present generated interiors or people as documentary photography of the club."
+    ]
+  }
+}
