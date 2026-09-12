@@ -294,6 +294,52 @@ h1 em {
   background: var(--gold-dark);
 }
 
+.hero-offer {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2.25rem);
+  max-width: 44rem;
+  margin: 1.65rem 0 1.8rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(242, 237, 226, 0.22);
+  border-bottom: 1px solid rgba(242, 237, 226, 0.22);
+}
+
+.hero-offer-price {
+  display: grid;
+  flex: 0 0 auto;
+  gap: 0.15rem;
+}
+
+.hero-offer-price span,
+.hero-offer p {
+  color: var(--cream-dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.hero-offer-price strong {
+  color: var(--gold-bright);
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.hero-offer-price small {
+  margin-left: 0.15rem;
+  color: var(--cream);
+  font-family: var(--body);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-offer p {
+  max-width: 25rem;
+  margin: 0;
+  line-height: 1.45;
+}
+
 .hero-actions,
 .visit-actions {
   display: flex;
@@ -850,6 +896,17 @@ footer small {
 
   .hero-actions .button {
     width: 100%;
+  }
+
+  .hero-offer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1.4rem;
+  }
+
+  .hero-offer p {
+    max-width: 18rem;
   }
 
   .hero-portrait {
