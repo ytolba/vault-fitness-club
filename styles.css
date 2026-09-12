@@ -769,7 +769,7 @@ footer small {
 
   .menu-toggle {
     position: relative;
-    z-index: 2;
+    z-index: 31;
     display: grid;
     place-content: center;
     gap: 0.42rem;
@@ -798,19 +798,20 @@ footer small {
 
   .site-nav {
     position: fixed;
-    inset: var(--header-h) 0 0;
+    z-index: 29;
+    inset: calc(var(--header-h) + 0.55rem) 0 0;
     display: flex;
     align-items: stretch;
     flex-direction: column;
     gap: 0;
-    padding: 1.5rem var(--page-x) 6rem;
+    padding: 1.1rem var(--page-x) 6rem;
     overflow-y: auto;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
     background: rgba(9, 10, 10, 0.98);
     font-family: var(--display);
-    font-size: clamp(2.7rem, 11vw, 5rem);
+    font-size: clamp(2.2rem, 10vw, 4.4rem);
     line-height: 1;
     text-align: left;
     transition: opacity 180ms ease, visibility 180ms ease;
@@ -818,7 +819,7 @@ footer small {
 
   .site-nav a {
     width: min(100%, 32rem);
-    padding: 1.15rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid var(--line-dark);
   }
 
@@ -925,20 +926,26 @@ footer small {
     width: calc(100% + (var(--page-x) * 2));
     min-height: 0;
     height: auto;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: auto;
+    overflow: visible;
     margin: 0 calc(var(--page-x) * -1) 2.5rem;
     border-left: 0;
     border-bottom: 1px solid rgba(240, 198, 90, 0.48);
   }
 
   .hero-portrait img {
+    height: auto;
+    aspect-ratio: 4 / 5;
     object-position: center;
     object-fit: contain;
   }
 
   .hero-portrait figcaption {
-    padding-right: calc(var(--page-x) + 0.75rem);
-    padding-left: var(--page-x);
+    position: relative;
+    inset: auto;
+    min-height: 4.4rem;
+    padding: 1rem var(--page-x);
+    border-top: 1px solid rgba(240, 198, 90, 0.45);
   }
 
   .hero-portrait figcaption p {
