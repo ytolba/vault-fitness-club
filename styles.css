@@ -798,23 +798,34 @@ footer small {
 
   .site-nav {
     position: fixed;
-    inset: 0;
-    display: grid;
-    place-content: center;
-    gap: 2rem;
+    inset: var(--header-h) 0 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 1.5rem var(--page-x) 6rem;
+    overflow-y: auto;
     visibility: hidden;
     opacity: 0;
-    background: var(--black);
+    pointer-events: none;
+    background: rgba(9, 10, 10, 0.98);
     font-family: var(--display);
     font-size: clamp(2.7rem, 11vw, 5rem);
     line-height: 1;
-    text-align: center;
+    text-align: left;
     transition: opacity 180ms ease, visibility 180ms ease;
+  }
+
+  .site-nav a {
+    width: min(100%, 32rem);
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--line-dark);
   }
 
   .site-nav.is-open {
     visibility: visible;
     opacity: 1;
+    pointer-events: auto;
   }
 
   .hero {
@@ -912,15 +923,17 @@ footer small {
   .hero-portrait {
     order: -1;
     width: calc(100% + (var(--page-x) * 2));
-    min-height: 36vh;
-    max-height: 20rem;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 5;
     margin: 0 calc(var(--page-x) * -1) 2.5rem;
     border-left: 0;
     border-bottom: 1px solid rgba(240, 198, 90, 0.48);
   }
 
   .hero-portrait img {
-    object-position: center 44%;
+    object-position: center;
+    object-fit: contain;
   }
 
   .hero-portrait figcaption {

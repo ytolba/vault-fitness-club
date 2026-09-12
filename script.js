@@ -27,26 +27,34 @@ window.addEventListener(
   { passive: true }
 );
 
+function setMenu(open) {
+  toggle.setAttribute('aria-expanded', String(open));
+  toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Open menu';
+  nav.classList.toggle('is-open', open);
+  body.classList.toggle('menu-open', open);
+}
+
 toggle.addEventListener('click', () => {
   const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-  toggle.setAttribute('aria-expanded', String(!isOpen));
-  nav.classList.toggle('is-open', !isOpen);
-  body.classList.toggle('menu-open', !isOpen);
+  setMenu(!isOpen);
 });
 
 nav.addEventListener('click', (event) => {
   if (event.target.matches('a')) {
-    toggle.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('is-open');
-    body.classList.remove('menu-open');
+    setMenu(false);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+    setMenu(false);
+    toggle.focus();
   }
 });
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 960) {
-    toggle.setAttribute('aria-expanded', 'false');
-    nav.classList.remove('is-open');
-    body.classList.remove('menu-open');
+    setMenu(false);
   }
 });
 
