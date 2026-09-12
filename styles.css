@@ -800,11 +800,12 @@ footer small {
     position: fixed;
     z-index: 29;
     inset: calc(var(--header-h) + 0.55rem) 0 0;
+    height: calc(100dvh - var(--header-h) - 0.55rem);
     display: flex;
     align-items: stretch;
     flex-direction: column;
     gap: 0;
-    max-height: calc(100dvh - var(--header-h) - 0.55rem);
+    max-height: none;
     padding: 0.7rem var(--page-x) 1.25rem;
     overflow: hidden;
     visibility: hidden;
